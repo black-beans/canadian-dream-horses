@@ -1,0 +1,30 @@
+!!!
+%html.no-js{ lang: 'de' }
+  %head
+    %meta{ charset: 'utf-8'}
+    %meta{ content: 'IE=edge', 'http-equiv' => 'X-UA-Compatible' }
+    %title Canadian Dream Horses
+    %meta{ content: 'Canadian Dream Horses', name: 'description' }
+    %meta{ content: 'Pferdeimport', name: 'Keywords' }
+    %meta{ content: 'width=device-width, initial-scale=1', name: 'viewport' }
+
+    %link{ href: 'http://fonts.googleapis.com/css?family=Gabriela', rel: 'stylesheet', type: 'text/css' }
+
+    = stylesheet_link_tag 'application'
+
+  %body
+    .container.text-center
+      %h1 Canadian Dream Horses
+      %p Wir sind bald für Sie da.
+
+    = javascript_include_tag 'application'
+
+    %script{ src: 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&callback=initializeMap' }
+
+    :javascript
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create', 'UA-48440730-1', 'canadian-dream-horses.ch');ga('send','pageview');
