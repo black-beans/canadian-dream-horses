@@ -3,7 +3,6 @@
  *= require './vendor/jquery-1.10.2.min'
  *= require bootstrap
  *= require_self
- *= require_tree ./base
  *= require_tree ./modules
  */
 
